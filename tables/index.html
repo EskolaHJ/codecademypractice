@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship To It - Company Packing List</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400"
+        rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <ul class="navigation">
+        <li><img src="https://content.codecademy.com/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png"
+                height="20px;"></li>
+        <li class="active">Action List</li>
+        <li>Profiles</li>
+        <li>Settings</li>
+    </ul>
+
+    <div class="search">Search the table</div>
+
+
+    <table> <!-- Creates a table-->
+        <!-- thead Represents the block of rows that consist of the column labels
+        (headers) for the parent table element, if the thead element has a parent and it is a table-->
+        <thead>
+            <tr> <!-- tr represents a row of cells in a table-->
+                <th scope="col">Company Name</th> <!-- th represents a header cell in a table-->
+                <th scope="col">Number of Items to Ship</th>
+                <th scope="col">Next Action</th>
+            </tr>
+        </thead>
+        <!-- tbody Represents a block of rows that consits of a body of data for the parent table element,
+        if the tbody element has a parent and it is a table-->
+        <tbody>
+            <tr>
+                <td>Adam's Greenworks'</td> <!-- td represents a data cell in a table-->
+                <td>14</td>
+                <td>Package Items</td>
+            </tr>
+            <tr>
+                <td>Davie's Burgers</td>
+                <td>2</td>
+                <td>Send Invoice</td>
+            </tr>
+            <tr>
+                <td>Baker's Bike Shop</td>
+                <td>3</td>
+                <td>Send Invoice</td>
+            </tr>
+            <tr>
+                <td>Miss Sally's Southern</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <tr>
+                <td>Summit Resort Rentals</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <!-- colspan brings it over 2 in the column 
+            rowspan does the same just in the row
+        has to have intiger of 1 or more-->
+            <tr>
+                <td colspan="2" rowspan="2">Strike Fitness</td>
+                <td>1</td>
+                <td>Enter Order</td>
+            </tr>
+        </tbody>
+        <!-- tfoot represents the block of rows that consist of the column summaries
+        Footers are often used to contain sums, differences, and other data results-->
+        <tfoot>
+            <td>Total</td>
+            <td>28</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
